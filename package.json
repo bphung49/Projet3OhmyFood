@@ -1,0 +1,24 @@
+{
+  "name": "p3_phung_ohmyfood",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bphung49/Projet3OhmyFood.git"
+  },
+  "author": "Bruno Phung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bphung49/Projet3OhmyFood/issues"
+  },
+  "homepage": "https://github.com/bphung49/Projet3OhmyFood#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
