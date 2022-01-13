@@ -1,4 +1,227 @@
 body {
-    color: #000;
-    background-color: bisque;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: "shrikhand", sans-serif;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.return {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+}
+.headerlogo {
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+.restaurants__heart {
+    i {
+      font-size: 2rem;
+      position: absolute;
+      right : 2rem;
+      bottom: 2rem;
+  }
+    .fas {
+    color: transparent;
+    background-clip: text;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+  }
+    &:hover .fas {
+      opacity: 1;
+      transform: translate(0%) scale(1);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(#FF79DA 0%, #9356DC 100%);    
+  }
+    &:hover .far {
+       color : transparent;
+   }
+}  
+.pagemenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    &__pict {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    &__title {
+        position: relative;
+        border-radius: 1.5rem 1.5rem 0 0;
+        padding: 2.4rem 0 1rem 1rem;
+        margin-top: -2rem;
+        background-color: #f6f6f6;
+    }
+}
+.menu {
+    margin-left: 2%;
+    &__title {
+        padding: 1rem 0 0.5rem;
+        font-size: 1rem;
+        &--underline {
+            width: 2.5rem;
+            border-top: 3px solid #99e2d0;
+            margin: 0.5rem 0 0 0;
+        }
+    }
+    &__desc {
+        background-color: #fff;
+        padding: 0 0 15px 0;
+        margin: 1rem 0 12px 1rem;
+        cursor: pointer;
+        width: 90%;
+        height: 100px;
+        border-radius: 1.5rem;
+        box-shadow: 3px 3px 10px #dedada;
+        overflow: hidden; 
+        position: relative;
+        animation-duration: 1s;
+        animation-name: appear;
+        transform: scale(0);
+        animation-fill-mode: both;
+        
+        &--title {
+            width: 100%;
+            padding: 0 0 0 12px;
+        }
+        &--subtitle {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1.5rem 0 12px;
+ 
+        }      
+        &:hover > .menu__desc--animation {
+            visibility: visible;
+            transition: all 0.4s ease-in;
+            transform: translateX(-100%);
+        }
+        &--animation {
+            position: absolute;
+            background-color: #99e2d0;
+            width: 20%;
+            height: 100%;
+            border-radius: 0 1.5rem 1.5rem 0;
+            color: #fff;
+            font-size: 20px;
+            visibility: hidden;
+            top: 0;
+            z-index: 100;
+            right: -20%;
+            display: flex;
+        }
+        &--price {
+            background: white;
+            color: black;
+            padding-right: 2rem;
+            padding-top: 3rem;
+            justify-content: center;
+            
+        }
+        &--circle {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem ;
+            margin-left: 2rem;
+        }
+    }
+}
+
+.txt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+@keyframes appear {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .anim {
+    &-1{
+      animation-delay: 0.1s;
+    }
+    &-2{
+      animation-delay: 0.2s;
+    }
+    &-3{
+      animation-delay: 0.3s;
+    }
+    &-4{
+      animation-delay: 0.4s;
+    }
+    &-5{
+      animation-delay: 0.5s;
+    }
+    &-6{
+      animation-delay: 0.6s;
+    }
+    &-7{
+      animation-delay: 0.7s;
+    }
+    &-8{
+      animation-delay: 0.8s;
+    }
+    &-9{
+      animation-delay: 0.9s;
+    }
+    &-10{
+      animation-delay: 1s;
+    }
+  }
+  
+
+
+.btn__menu {
+    width: 190px;
+    border-radius: 2rem;
+    border: 0;
+    box-shadow: 3px 3px 3px #dedada;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-image: -o-radial-gradient(20px 0, ellipse farthest-corner, #ff79da 0%, #9356dc 100%);
+    background-image: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9356dc 100%);
+    cursor: pointer;
+    &--block {
+        display: flex;
+        justify-content: center;
+    }
+}
+footer {
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1.5rem;
+    font-size: 12px;
+}
+.footerlogo {
+    filter: invert(100%);
+    width: 105px;
+    height: 15px;
+    padding: 2rem 0 1.5rem 0;
+    margin: 0 0 0 -10px;
 }
